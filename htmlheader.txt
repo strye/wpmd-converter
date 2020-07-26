@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+
+    <style>
+
+    body {font-size: 14px; font-family: Verdana, Georgia}
+    .titlePage {text-align: center}
+    .title {font-size: 1.5em}
+    .issueTitle {text-transform: uppercase}
+    .spacer {margin-top:100px}
+    .comment {font-weight: bold; color: 000060}
+	.private {font-weight: bold; color: 600000; font-size: 1.1em}
+    .bold {font-weight: bold}
+    .characterName {padding-left: 30%}
+    .dialogParenthetical {padding-left: 20%}
+    .dialog {padding-left: 25%}
+    .pageHeading {font-size:1.25em; font-weight:bold; text-decoration: underline; margin-top:100px}
+    .panelHeading {text-transform: uppercase; text-decoration: underline; margin-top:15px}
+    
+	.dialog .char-name {width: 25%}
+
+	div {margin-bottom: 15px}
+
+    </style>
+
+</head>
+<body>
