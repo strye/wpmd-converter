@@ -11,11 +11,9 @@ class CMSConverter {
         // Read file
         fileProc.read(file)
         .then(function(content) {
-            console.log(content);
+            console.log(content.lineCount, content.wordCount);
             jsonProc.processContentJson(content)
-            .then(function(opts){
-                console.log(opts)
-            })
+            //.then(function(results){ console.log(results) })
         })
     
     }
