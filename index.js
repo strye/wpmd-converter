@@ -1,24 +1,17 @@
 let jsonProcessor = require("./lib/json-processor"),
-readLines = require("./lib/read-file");
+fileReader = new require("./lib/file-reader");
 
 class CMSConverter {
 
-    static get Processor() { return processor; }
-
-    static get FileProcessor() { return fileProcessor; }
-
-    static get ReadLines() { return readLines; }
-
-    static get ConverterFactory() { return converterFactory; }
-
-
-    static processFile(file, outputFile, commentsOn) {
-        let outputOptions = {type: "html", outputFile: outputFile, commentsOn: false},
-        jsonProc = new jsonProcessor(outputOptions)
+    static processFile(file, outputFile, commentsOn = false) {
+        let outputOptions = {type: "html", outputFile: outputFile, commentsOn: commentsOn},
+        jsonProc = new jsonProcessor(outputOptions),
+        fileProc = new fileReader();
     
         // Read file
-        readLines(file)
-        .then(function(content) {	
+        fileProc.read(file)
+        .then(function(content) {
+            console.log(content);
             jsonProc.processContentJson(content)
             .then(function(opts){
                 console.log(opts)
@@ -30,4 +23,4 @@ class CMSConverter {
 }
 
 
-export default CMSConverter;
+module.exports = CMSConverter;

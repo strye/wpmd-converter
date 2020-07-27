@@ -1,10 +1,20 @@
 --------------------
 Title: Article Title
-Publish Date: 
-Author: 
-Categories: 
-Tags: 
-Blurb: 
+Sub Title: Optional Sub-Title
+
+Description: Long Description
+Blurb: Short Hook
+
+Author: Name(s)
+Contact: Optional contact info
+
+Version: Revision Number
+Status: Draft, Review, Publish, Remit
+Revision Date: The date of the last version
+Publish Date: The date to be published
+
+Categories: comma separated list of categories
+Tags: comma separated list of tags
 
 --------------------
 

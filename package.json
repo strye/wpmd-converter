@@ -1,0 +1,26 @@
+{
+  "name": "wpmd-converter",
+  "version": "1.0.0",
+  "description": "Format converter for White Paper Markdown. Can generate files of type; json, html, docx, pdf.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strye/wpmd-converter.git"
+  },
+  "keywords": [
+    "whitepaper",
+    "markdown"
+  ],
+  "author": "Will Strye",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/strye/wpmd-converter/issues"
+  },
+  "homepage": "https://github.com/strye/wpmd-converter#readme"
+}
